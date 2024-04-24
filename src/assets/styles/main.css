@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Calibri, sans-serif;
+    background-color: rgb(238, 219, 195);
+    margin: 0;
+}
+
+header,
+main {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+img {
+    max-width: 100%;
+}
+
+a:link,
+a:hover,
+a:visited,
+a:active {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #ddd;
+    font-size: smaller;
+    padding: 1rem;
+    margin-top: 5rem;
+    border-top: 2px solid black;
+}
+
+header {
+    display: grid;
+    grid-template-areas:
+        "site-title   nav"
+        "page-title   page-title";
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    grid-area: site-title;
+    margin: 0;
+    padding-top: 1rem;
+    font-size: 7vw;
+}
+
+header h2 {
+    grid-area: page-title;
+    margin: 0;
+    padding-top: 0.5rem;
+}
+
+header nav {
+    grid-area: nav;
+    justify-self: end;
+    align-self: center;
+}
+
+main p {
+    line-height: 1.5;
+}
+
+ul.stamppanes {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-gap: 1rem;
+}
+
+ul.stamppanes li {
+    border: thin solid black;
+    padding: 0.5rem;
+    background-color: white;
+}
+
+ul.stamppanes li a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+ul.stamppanes li img {
+    max-width: 100%;
+}
+
+
+.panestamps {
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+    grid-gap: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.binomial { font-style: italic; }
+
+ul.species {
+    margin: 0;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+ul.species li {
+    border: thin solid gray;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+ul.species li div { margin-top: 0.5rem;}
+ul.species li div.external_links { font-size: 0.9rem;}

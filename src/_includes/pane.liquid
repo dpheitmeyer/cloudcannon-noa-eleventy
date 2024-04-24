@@ -1,0 +1,56 @@
+---
+layout: "base"
+---
+{{ content }}
+
+<h3>Stamp Pane</h3>
+<div class="paneimage">
+  <img
+    src="/assets/images/sn{{ sn }}.png"
+    alt="{{ title }}"
+    alt="Pane of stamps for {{ title }}" />
+</div>
+
+{% if stamps %}
+  <h3>Individual Stamps in Pane</h3>
+  <div class="panestamps">
+    {% for stamp in stamps %}
+      <img src="/assets/images/{{ stamp }}" />
+    {% endfor %}
+  </div>
+{% endif %}
+
+{% if species %}
+  <h3>Species Represented in Stamp Pane</h3>
+  <ul class="species">
+    {% for s in species %}
+      <li>
+        {{ s.name_common }}
+        <div class="binomial">{{ s.name_scientific }}</div>
+        <div class="external_links">
+          {% if s.eol_id %}
+            <a class="link_eol" href="https://eol.org/pages/{{ s.eol_id }}">eol</a>
+          {% endif %}
+          <a class="link_wikipedia" href="https://wikipedia.org/w/index.php?search={{ s.name_scientific | url_encode }}">Wikipedia</a>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+{% if resources %}
+  <h3>Additional Resources</h3>
+  <ul class="resources">
+    {% for resource in resources %}
+      <li>
+        <a href="{{ resource.url }}">{{ resource.title }}</a>
+        {%- if resource.description -%}. {{ resource.description }}{%- endif -%}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+<h3>Stamp Pane Back</h3>
+<div class="paneimageback">
+  <img src="/assets/images/sn{{ sn }}-b.png" alt="Back of pane of stamps for {{ title }}" />
+</div>
