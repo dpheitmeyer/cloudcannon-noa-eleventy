@@ -11,8 +11,39 @@ collections_config:
   panes:
     path: panes
     output: true
+    description: ''
     icon: notes
+    _editables:
+    _inputs:
+    _select_data:
+    _structures:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+    schemas:
+      pane:
+        path: .cloudcannon/schemas/
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: false
+        name:
+        icon: notes
+        preview:
+        _editables:
+        _inputs:
+          title:
+            type: text
+            cascade: true
+          sn:
+            type: text
+            cascade: true
+          year:
+            type: text
+            cascade: true
+        _select_data:
+        _structures:
+        create:
+        new_preview_url:
+data_config: {}
 timezone: Etc/UTC
