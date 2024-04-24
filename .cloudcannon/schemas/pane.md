@@ -1,0 +1,17 @@
+---
+title: 
+sn: 
+year: 
+position: 
+place: 
+date: 
+stamps:
+  - 
+resources:
+  - url: 
+    title: 
+species:
+  - name_common: 
+    name_scientific: 
+    eol_id: 
+  ---
