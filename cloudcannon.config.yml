@@ -22,8 +22,8 @@ collections_config:
     disable_file_actions: false
     schemas:
       pane:
-        path: .cloudcannon/schemas/
-        reorder_inputs: true
+        path: .cloudcannon/schemas/pane.md
+        reorder_inputs: false
         hide_extra_inputs: false
         remove_empty_inputs: false
         remove_extra_inputs: false
@@ -32,15 +32,6 @@ collections_config:
         preview:
         _editables:
         _inputs:
-          title:
-            type: text
-            cascade: true
-          sn:
-            type: text
-            cascade: true
-          year:
-            type: text
-            cascade: true
         _select_data:
         _structures:
         create:
