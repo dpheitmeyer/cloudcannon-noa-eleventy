@@ -1,10 +1,11 @@
 ---
+_schema: default
 title: Longleaf Pine Forest
 sn: 3611
 year: 2002
 position: fourth
 place: Tallahassee, Florida
-date: 2002-01-01
+date: 2002-01-01T00:00:00Z
 stamps:
   - npm_2008_2007_172.jpg
   - npm_2008_2007_173.jpg
@@ -16,6 +17,18 @@ stamps:
   - npm_2008_2007_179.jpg
   - npm_2008_2007_180.jpg
   - npm_2008_2007_181.jpg
+resources:
+  - url: https://www.scwf.org/longleaf
+    title: Longleaf Pine Habitat | South Carolina Wildlife Federation
+  - url: Congaree National Park
+    title: https://www.nps.gov/cong/
+species:
+  - name_common: Northern Bobwhite
+    name_scientific: Colinus virginianus
+    eol_id:
+  - name_common: Southern Toad
+    name_scientific: Buto terrestris
+    eol_id:
 ---
 Although greatly reduced in size, the longleaf pine forest still occupies parts of its natural range in the coastal plains from southeastern Virginia to eastern Texas. Characterized by the longleaf pine, this unique ecosystem includes many plant communities that vary with soil type, moisture, and frequency of fire.
 
